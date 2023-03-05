@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+*
+{
+    text-decoration: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body 
+{
+    background-color: #15161f;
+    position: relative;
+}
+.navbar-nav
+{
+    margin-left: auto;
+}
+.navbar-brand img
+{
+    height: 2rem;
+}
+.navbar-nav li 
+{
+    padding-right: 1rem;
+}
+.navbar
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, .7)!important;
+}
+.navbar a 
+{
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover
+{
+    color: #21409a;
+}
+.hero 
+{
+    margin-top: 100px;
+}
+.sadrzaj
+{
+    padding-top: 15px;
+    background-color: #f1f5f8;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 3px;
+    height: 370px;
+    transition: all 0.5s ease-in-out;
+}
+.sadrzaj:hover
+{
+    margin-top: 10px;
+    background-color: #31334a;
+    color: white;
+}
+.sadrzaj h2 
+{
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.naslov 
+{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+.bottom
+{
+    margin-top: 40px;
+}
+.galerija
+{
+    margin-top: 40px;
+    text-align: center;
+}
+.sadrzaj
+{
+    margin-top: 15px;
+}
+.galerija h2 
+{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+footer 
+{
+    background-color: #15161f;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+hr 
+{
+    margin-top: 100px;
+}
+footer .container
+{
+    padding-top: 50px;
+}
+footer ul 
+{
+    margin-top: 10px;
+    padding: 0px;
+}
+footer li 
+{
+    margin-bottom: 10px;
+    padding: 0px;
+}
+footer li a
+{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.info_tabela i
+{
+    margin-right: 10px;
+    color: white;
+    font-size: 15px;
+}
+.info_tabela h4 
+{
+    color: white;
+    font-size: 15px;
+    padding-top: 7px;
+}
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+.obs 
+{
+    transform: translateX(-100%);
+    opacity: 0;
+}
+.obs_show 
+{
+    animation: observer_anim 1s forwards;
+}
+@keyframes observer_anim
+{
+    0% 
+    {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    100% 
+    {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,92 @@
+*
+{
+    text-decoration: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body 
+{
+    position: relative;
+    background-color: #15161f;
+}
+.navbar-nav
+{
+    margin-left: auto;
+}
+.navbar-brand img
+{
+    height: 2rem;
+}
+.navbar-nav li 
+{
+    padding-right: 1rem;
+}
+.navbar
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, .7)!important;
+}
+.navbar a 
+{
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover
+{
+    color: #21409a;
+}
+.gallery
+{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+footer 
+{
+    background-color: #15161f;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+hr 
+{
+    margin-top: 100px;
+}
+footer .container
+{
+    padding-top: 50px;
+}
+footer ul 
+{
+    margin-top: 10px;
+    padding: 0px;
+}
+footer li 
+{
+    margin-bottom: 10px;
+    padding: 0px;
+}
+footer li a
+{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.info_tabela i
+{
+    margin-right: 10px;
+    color: white;
+    font-size: 15px;
+}
+.info_tabela h4 
+{
+    color: white;
+    font-size: 15px;
+    padding-top: 7px;
+}

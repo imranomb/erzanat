@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="icon" href="img/ikone/favicon.ico">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="slider_style.css">
+    <title>Početna</title>
+</head>
+<body data-spy="scroll" data-target="#navbarResponsive">
+    
+    <div id="pocetna">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pocetna">POČETNA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#usluge">O NAMA</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="objasnjenja_html/usluge.html">USLUGE</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      NAŠA PONUDA
+                    </a>
+                    <ul class="dropdown-menu bg-dark">
+                      <li><a class="dropdown-item" href="objasnjenja_html/sanduk.html">KIPER SANDUCI</a></li>
+                      <li><a class="dropdown-item" href="objasnjenja_html/vucna.html">NADOGRADNJA ZA VUCNU SLUZBU</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">KONTAKT</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="objasnjenja/galerija.html">GALERIJA</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="slider">
+          <div class="slide_content sc_copy">
+          </div>
+          <div class="slika active_right">
+              <img src="img/slider_photos/1.jpg"/>
+              <div class="slide_content">
+                  <h2 class="sc_header">NAŠA PONUDA</h2>
+                  <h4>IZRADA NOVIH ERZ KIPER SANDUKA</h4>
+                  <button class="slide_button">OPŠIRNIJE</button>
+                  <button class="slide_button">KONTAKT</button>
+              </div>
+          </div>
+          <div class="slika">
+              <img src="img/slider_photos/2.jpg"/>
+              <div class="slide_content">
+                  <h2 class="sc_header">FIKSNA ILI KLIZNA</h2>
+                  <h4>NADOGRADNJA ZA VUČNU SLUŽBU</h4>
+              </div>
+          </div>
+          <div class="slika">
+              <img src="img/slider_photos/4.jpg"/>
+              <div class="slide_content">
+                  <h2 class="sc_header">PJESKARENJE</h2>
+                  <h4>VRŠIMO PJESKARENJE SVIH METALA</h4>
+              </div>
+          </div>
+          <div class="slika">
+              <img src="img/slider_photos/3.jpg"/>
+              <div class="slide_content">
+                  <h2 class="sc_header">ER ZANAT</h2>
+                  <h4>Pouzdanost, povjerenje i efikasnost.</h4>
+              </div>
+          </div>
+          
+          <div class="selectors">
+              <i data-sn="0" class="fa-solid fa-square active-square" onclick="square_click()"></i>
+              <i data-sn="1" class="fa-solid fa-square" onclick="square_click()"></i>
+              <i data-sn="2" class="fa-solid fa-square" onclick="square_click()"></i>
+              <i data-sn="3" class="fa-solid fa-square" onclick="square_click()"></i>
+          </div>
+  
+  
+          <i class="fa-solid fa-arrow-right fa-arr" onclick="slide_right()"></i>
+          <i class="fa-solid fa-arrow-left fa-arr" onclick="slide_left()"></i>
+      </div>  
+
+
+    </div>
+
+    <div id="usluge">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="overlap narrow obs">
+                        <img src="img/preklop.png" width="501" height="412" class="img-fluid" alt="...">
+                    </div>
+                </div>
+                <div class="col-sm-6 align-self-center">
+                    <div class="tt obs">
+                      <h4>[ UKRATKO O NAMA ]</h4>
+                      <h2>Zašto biste trebali izabrati nas kao Vašeg partnera?</h2>
+                      <p class="tekst">
+                      ER Zanat je firma koja se bavi dugi niz godina izradom i pružanjem usluga svojim korisnicima. Korisnici naših usluga su prvenstveno firme iz Bosne i Hercegovine, ali i zemlje regije kao i Europske Unije. 
+                      Osnovna djelatnost naše kompanije jeste izrada “ER Zanat Kiper Sanduk” i nadogradnja za “Vučnu Službu”.
+                      Naše dodatne usluge koje vršimo su: “Prepravke teretnih vozila”, “Bravarsko-limarski radovi”, “Pjeskarenje”.
+                      ER Zanat se nalazi u blizini Jelaha uz Regionalni put R474, Općina Tešanj</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="hero">
+      <h2 class="naslov obs">POGLEDAJTE PONUDU</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 obs">
+            <a href="/objasnjenja_html/sanduk.html"><div class="sanduk">
+              <img src="img/ikone/s_white.png" width="356" height="206">
+              <h3>KIPER SANDUK</h3>
+            </div></a>
+          </div>
+          <div class="col-md-6 obs">
+            <a href="/objasnjenja_html/vucna.html"><div class="sanduk">
+              <img src="img/ikone/vs_white.png" width="356" height="206">
+              <h3>VUČNA SLUŽBA</h3>
+            </div></a>
+          </div>
+        </div>
+      </div>
+     </div>
+   
+    <div id="poruci">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12 align-self-center">
+                <div class="info obs">
+                  <h3>Želite li saznati više o našoj ponudi?</h3>
+                  <h4>Posjetite našu kontakt stranicu i javite nam se direktno preko forme. <br> Mi ćemo Vam se obratiti u što kraćem roku.</h4>
+                  <a class="btn btn-outline-primary" href="kontakt.html">KONTAKTIRAJTE NAS</a>
+                </div>
+              </div>
+              </div>
+            </div>
+    </div>
+    <footer>
+      <div class="container">
+        <img class="img-fluid" src="/img/logo.png">
+        <ul>
+          <li><a href="index.html">O nama</a></li>
+          <li><a href="/objasnjenja_html/sanduk.html">Kiper Sanduk</a></li>
+          <li><a href="/objasnjenja_html/vucna.html">Vucna sluzba</a></li>
+          <li><a href="/kontakt.html">Kontakt</a></li>
+          <li><a href="/objasnjenja/galerija.html">Galerija</a></li>
+        </ul>
+        <table class="info_tabela" style="border-spacing: 10px;">
+          <tr>
+            <td><i class="fa-solid fa-envelope"></i></td>
+            <td><h4>INFO@ERZANAT.BA</h4></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-phone"></i></td>
+            <td><h4>+38761401338</h4></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-clock"></i></td>
+            <td><h4>08H - 16H</h4></td>
+          </tr>
+        </table>
+      </div>
+    </footer>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ca1129a0e5.js" crossorigin="anonymous"></script>  
+    <script src="script.js"></script>
+    <script src="observ.js"></script>
+    <script src="slider_script.js"></script>
+</body>
+</html>

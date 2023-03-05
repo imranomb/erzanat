@@ -1,0 +1,177 @@
+*
+{
+    text-decoration: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body 
+{
+    position: relative;
+    background-color: #15161f;
+}
+.navbar-nav
+{
+    margin-left: auto;
+}
+.navbar-brand img
+{
+    height: 2rem;
+}
+.navbar-nav li 
+{
+    padding-right: 1rem;
+}
+.navbar
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, .7)!important;
+}
+.navbar a 
+{
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover
+{
+    color: #21409a;
+}
+.kontakt_info
+{
+    margin-top: 100px;
+}
+.kontakt_info .fa-solid
+{
+    text-align: center;
+}
+.kontakt_info ul li
+{
+    display: inline-block;
+    color: white;
+    font-size: 60px;
+    margin: 25px;
+}
+
+form 
+{
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+}
+form h2
+{
+    text-align: center;
+    color: white;
+}
+.info 
+{
+    display: flex;
+    justify-content: center;
+}
+form input, form textarea
+{
+    width: 450px;
+    max-width: 450px;
+    border: 0;
+    margin-top: 10px;
+    padding: 20px;
+    outline: none;
+    background-color: white;
+    font-size: 16px;
+}
+form .btn
+{
+    width: 150px;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+.r_map
+{
+    margin-bottom: 20px;
+}
+footer 
+{
+    background-color: #15161f;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+hr 
+{
+    margin-top: 100px;
+}
+footer .container
+{
+    padding-top: 50px;
+}
+footer ul 
+{
+    margin-top: 10px;
+    padding: 0px;
+}
+footer li 
+{
+    margin-bottom: 10px;
+    padding: 0px;
+}
+footer li a
+{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.info_tabela i
+{
+    margin-right: 10px;
+    color: white;
+    font-size: 15px;
+}
+.info_tabela h4 
+{
+    color: white;
+    font-size: 15px;
+    padding-top: 7px;
+}
+.obs 
+{
+    transform: translateX(-100%);
+    opacity: 0;
+}
+.obs_show 
+{
+    animation: observer_anim 1s forwards;
+}
+.onsub h4 
+{
+    display: none;
+    color: white;
+    font-size: 1vw;
+    margin-top: 20px;
+}
+@media screen and(max-width: 767px)
+{
+    .onsub h4 
+        {
+        display: none;
+        color: white;
+        font-size: 3.5vw;
+        margin-top: 20px;
+    }
+}
+@keyframes observer_anim
+{
+    0% 
+    {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% 
+    {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}

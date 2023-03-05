@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+*
+{
+    text-decoration: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body 
+{
+    position: relative;
+}
+.navbar-nav
+{
+    margin-left: auto;
+}
+.navbar-brand img
+{
+    height: 2rem;
+}
+.navbar-nav li 
+{
+    padding-right: 1rem;
+}
+.navbar
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, .7)!important;
+}
+.navbar a 
+{
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover
+{
+    color: #21409a;
+}
+
+.carousel-item
+{
+    width: 100%;
+    height: 100vh;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.carousel-caption
+{
+    position: absolute;
+    width: 100%;
+    top: 38%;
+    right: 0;
+    left: 0;
+}
+.carousel-caption h1 
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+}
+.carousel-caption h3 
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+
+#usluge
+{
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+#usluge h4 
+{
+    font-size: 15px;
+    color: silver;
+}
+#usluge h2 
+{
+    font-family: 'Crimson Text', serif;
+    font-size: 40px;
+}
+#usluge p
+{
+    font-size: 20px;
+}
+
+.naslov
+{
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    margin: 70px;
+}
+.sanduk
+{
+    background-color: #15161f;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 3px;
+    text-align: center;
+    margin-bottom: 70px;
+    transition: all 0.5s ease;
+}
+.sanduk h3 
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    text-decoration: underline;
+}
+.sanduk:hover
+{
+    margin-top: 10px;
+    background-color: #131c36;
+    cursor: pointer;
+}
+.info
+{
+    text-align: center;
+    color: #15161f;
+    border: 2px solid #15161f;
+    padding: 10px;
+    border-radius: 3px;
+}
+.info h3 
+{
+    color: #21409a;
+}
+.slika 
+{
+    border-radius: 3px;
+}
+#poruci
+{
+    margin-bottom: 70px;
+}
+.r_map
+{
+    overflow: hidden;
+}
+
+#lok
+{
+    background-color: #15161f;
+    padding-bottom: 20px;
+}
+#lok .container
+{
+    align-items: center;
+}
+footer 
+{
+    background-color: #15161f;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+footer .container
+{
+    padding-top: 50px;
+}
+footer ul 
+{
+    margin-top: 10px;
+    padding: 0px;
+}
+footer li 
+{
+    margin-bottom: 10px;
+    padding: 0px;
+}
+footer li a
+{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.info_tabela i
+{
+    margin-right: 10px;
+    color: white;
+    font-size: 15px;
+}
+.info_tabela h4 
+{
+    color: white;
+    font-size: 15px;
+    padding-top: 7px;
+}
+.obs 
+{
+    transform: translateX(-100%);
+    opacity: 0;
+}
+.obs_show 
+{
+    animation: observer_anim 1s forwards;
+}
+@keyframes observer_anim
+{
+    0% 
+    {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% 
+    {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 480px) {
+    form 
+    {
+        width: 300px;
+    }
+    .carousel-caption h1
+    {
+        font-size:  30px;
+    }
+    .carousel-caption h2
+    {
+        font-size:  15px;
+    }
+    #usluge
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .tt
+    {
+        margin-top: 20px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    form 
+    {
+        width: 350px;
+    }
+    .tt
+    {
+        margin-top: 30px;
+    }
+    #usluge
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .naslov
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .sanduk
+    {
+        margin-top: 20px;
+        margin-bottom: 70px;
+    }
+  }
